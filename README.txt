@@ -1,89 +1,84 @@
-REPWISE IRON GOLD — reference-inspired UI update on v1.2
+ATLAS & OAK — IRON GOLD EDITION (v2.0)
+======================================
 
-REPWISE — GOLD IRON EDITION (theme update on v1.2)
-REPWISE — WORKOUT TRACKER (v1.2 functionality)
-================================
+A private, offline-friendly strength training, cardio, and daily goals web app.
+Working name: Atlas & Oak. Not a trademark or publication clearance opinion.
 
-WHAT'S INCLUDED
-- Log strength exercise sets, repetitions, weights, optional RIR, and completion.
-- Generate Push/Pull/Legs/Upper/Lower/Full Body sessions using Mix It Up.
-- Reusable intelligent variation: compounds first; preference learning from completed logs after six strength sessions; optional accessory supersets and drop sets.
-- Log cardio sessions by time and distance.
-- Start and edit routines, add custom exercises, and repeat past workouts.
-- Browse, search, edit, and delete workout history.
-- See estimated 1-rep max, max weight, repetitions, session volume, RIR and near-failure volume charts, plus RIR-versus-volume scatter plots.
-- Rest timer, weekly summaries, and lb/kg + mi/km conversion.
-- Export JSON backups or CSV data; import a JSON backup.
+WHAT'S NEW
+- Daily Fundamentals: training or planned rest, protein, calorie range,
+  hydration, sleep, and optional mobility; plus user-defined checkbox habits.
+- Progress entries, custom numeric targets, water/protein quick-add buttons,
+  weekly consistency chart, and a compact home-screen summary.
+- Weekly training planner with workout/rest/flexible days and routine choices.
+- Adjustable tracking-day reset hour for unusual and overnight schedules.
+- Body-weight trend, weekly body-weight averages, measurements, and optional
+  progress photos compressed and stored locally in IndexedDB.
+- Local safety snapshots after completed workouts, plus manual JSON backups
+  that include saved photos if the browser allows accessing them.
+- Updated Atlas & Oak branding with the same aged-gold vintage iron look.
 
-FASTEST WAY TO TRY IT
-Download the separate Repwise_Workout_Tracker.html file and open it in
-an ordinary desktop browser. Everything is built into that one file.
-The Files app/iPhone preview may not execute interactive HTML correctly,
-so for your phone use the installable web-app option below.
+RETAINED
+- Weight, reps, RIR, cardio, workout history, custom exercise library,
+  routines, estimated 1RM, best sets, muscle-group exposure, progression and
+  volume charts, adaptive Mix It Up, rest timer and unit conversion.
 
-USE ON AN IPHONE AS A HOME SCREEN APP
-1) Extract the ZIP file. Keep its contents together: index.html,
-   styles.css, app.js, manifest.webmanifest, service-worker.js,
-   icon.svg and both icon PNGs.
-2) Upload those files to a web host with HTTPS. GitHub Pages or Netlify
-   are examples; these are third-party services with separate accounts.
-3) Open the resulting HTTPS address in Safari on your iPhone.
-4) Tap Share > Add to Home Screen > Add.
-5) After the first successful load, the service worker caches the app for
-   offline use. Keep regular JSON backups.
+UPGRADING YOUR CURRENT REPWISE GITHUB PAGES SITE
+1. IMPORTANT: In the current Repwise app, open Settings and Download backup.
+   Keep the JSON in iCloud Drive or another reliable location.
+2. In GitHub, open the repository hosting your old app. Upload/replace the
+   files from THIS extracted ZIP at the SAME repository path, on the same
+   branch; do not upload the ZIP as a single file or put the files in a nested
+   folder. The root must contain index.html, app.js and styles.css.
+3. GitHub Pages will redeploy. Return to the SAME GitHub Pages website URL.
+   Do not clear your browser/site data or remove the existing Home Screen
+   app before checking your workout records.
+4. Atlas & Oak intentionally keeps the prior localStorage key
+   repwise_workouts_v1 and backup schema version 1 to preserve your data.
+5. If history does not appear (for example after changing domains or devices),
+   go to Settings > Restore from backup and select the saved JSON file.
+6. On your iPhone, refresh or reopen the Home Screen app to fetch the update.
 
-GITHUB PAGES OPTION (IN A DESKTOP BROWSER)
-1) Sign in to GitHub and make a new repository, such as 'repwise-app'.
-2) Upload the EXTRACTED files from the ZIP to the repository's top level
-   (not the ZIP itself), then commit them.
-3) In repository Settings > Pages, choose Deploy from a branch, select
-   the main branch and /(root), and save.
-4) Open the published https://YOURNAME.github.io/repwise-app/ link.
-5) Follow iPhone Safari's Add to Home Screen steps above.
+FOR A NEW INSTALLATION
+1. Extract the ZIP contents.
+2. Upload ALL files (not the ZIP) to a PUBLIC GitHub Pages repository or
+   another HTTPS web host, at the same directory level as index.html.
+3. Enable GitHub Pages from the main branch and / (root).
+4. Open your Pages website in Safari and choose Share > Add to Home Screen.
 
-DATA / PRIVACY
-- No server, account, or analytics are used by the app itself.
-- Data is stored in the browser on EACH device, not synchronized.
-- Browsers can remove stored data. Private browsing is not recommended.
-- Backup: Settings > Download backup. Restore: Settings > Import JSON.
-- Avoid storing sensitive information in exercise/workout notes.
-- Republishing/hosting the code doesn't publish your workout records.
+DATA SAFETY
+- Workout history, plans, goals, and measurements are stored locally in the
+  browser via localStorage under repwise_workouts_v1 (unchanged on purpose).
+- Progress photos are stored separately in this browser's IndexedDB. They are
+  compressed for space. The full JSON backup attempts to bundle photos too.
+- Photo and safety-copy storage depends on IndexedDB being available.
+- A local safety snapshot is NOT a cloud backup; clearing all website data,
+  using another device, or losing your phone can erase it.
+- Download a JSON backup regularly, especially BEFORE EVERY update.
+- There is no login, automatic cloud sync, server data store, or advertising.
+- Targets shown on first launch are EXAMPLES, not individualized nutrition,
+  hydration, or health advice. Adjust them in Daily > Goals.
+- Plan/rest-day completion is automatic; a logged workout also completes
+  the training category. Missing goal data means not recorded, not failure.
+- 1RM, RIR and set-volume charts are descriptive and not validated measures
+  of muscle growth or physiological recovery.
 
-LIMITATIONS
-- This is a web app, not a native iOS app or an App Store listing.
-- No Apple Watch, Apple Health, login, or cloud syncing in this version.
-- Actual installation on a physical iPhone has not been tested here.
-- A standalone HTML file may not provide reliable storage on iOS.
+ONE-FILE BROWSER PREVIEW
+The separate Atlas_and_Oak_Tracker_v2.html file is a self-contained preview
+suitable for testing in a desktop browser. It is not an installable PWA.
+For iPhone use, install from the HTTPS-hosted app in this ZIP.
 
-No build tools, libraries, or API keys are required.
+FILES
+ index.html             App entry point
+ app.js                 Workout + Daily Fundamentals functionality
+ styles.css             Vintage Iron Gold theme
+ manifest.webmanifest   Home Screen app metadata
+ service-worker.js      Offline cache (requires HTTPS)
+ icon.svg               Vector app icon
+ icon-192.png           Home Screen icon
+ icon-512.png           Larger icon
+ iron-gold-bg.webp      Textured background
+ iron-plate.webp        Cast-iron plate hero artwork
+ iron-texture.webp      Repeating industrial metal texture
 
-
-WHAT RIR MEANS
-RIR (reps in reserve) = number of additional technically sound repetitions
-you estimate you could have completed. RIR=0 means failure; RIR=2 means
-approximately two more were possible. Leaving the field blank means
-"unknown", not "0". Existing records without RIR remain valid.
-Effort-aware charts exclude sets with no RIR from RIR-specific metrics.
-The volume-versus-RIR graph is descriptive and is not proof of training
-effectiveness, muscle growth, or causation.
-
-UPGRADING
-To update an existing hosted web app, replace all hosted app files with
-these v1.1 files at the same URL and origin; then reopen online to let the
-new service worker update. Do NOT clear browser/site data. Data is stored
-locally for that exact origin and browser. Changing domains or opening a
-standalone file may create a separate empty storage space. Export a JSON
-backup from the older app before upgrading and import it into v1.1 if needed.
-Backups stay compatible with the v1 data format.
-
-
-GOLD THEME UPDATE
-- Aged gold and dark gunmetal palette, vintage iron photography, matching gold app icon.
-- No changes to workout data schema, import/export, saved routines or log logic.
-- Existing records remain locally stored when files are upgraded at SAME origin/browser.
-- Data key remains repwise_workouts_v1.
-- Export JSON backup before updating; don't clear website data.
-- The single-file HTML includes the decorative wallpaper embedded locally.
-
-Cinematic metal plates + riveted frames are decorative; workout stats remain real.
-The data key and schema are unchanged. Keep the same website origin to retain workouts; export JSON first.
+For private distribution, GitHub Pages is not an access-control system. A
+private repository does not by itself make a published Pages website private.

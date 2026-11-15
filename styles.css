@@ -254,3 +254,65 @@ body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;ba
 .nav-link.active{color:#fad785;background:linear-gradient(150deg,#5b4120aa,#2d2215aa);border:1px solid #a07a3f;box-shadow:inset 0 1px #f4d38b44}.nav-link{border-radius:4px;font-family:Impact,'Arial Narrow',sans-serif;letter-spacing:.7px;text-transform:uppercase;min-width:0}
 @media(max-width:590px){.shell{padding-left:10px;padding-right:10px}.hero.hero-iron{padding:18px 13px 12px;min-height:239px}.hero-iron:before{background:linear-gradient(90deg,#0e0b09e8 0%,#0e0b09be 39%,#0d0b0999 53%,#0e0b0910 100%),url('./iron-plate.webp') right top/auto 245px no-repeat}.hero-iron h1{font-size:clamp(43px,11vw,65px);margin-top:21px;margin-bottom:9px}.hero-iron p{max-width:68%;font-size:11px;font-weight:850;letter-spacing:.8px;margin-bottom:24px}.iron-hero-cta{max-width:295px}.iron-stats{gap:5px}.iron-dashboard .stat{min-height:96px;padding:10px 3px 8px}.iron-dashboard .stat-icon{font-size:16px}.iron-dashboard .stat strong{font-size:clamp(15px,4vw,20px)}.iron-dashboard .stat-label{font-size:9px}.iron-section-bar{gap:6px;padding:8px 12px}.iron-section-bar h2{font-size:18px}.iron-section-medal{width:35px;height:35px;font-size:18px}.iron-plate-label{font-size:9px;padding:6px}.iron-plan-list div{font-size:11px}.iron-pr-row strong{font-size:12px}.iron-mix strong{font-size:17px}.iron-mix span{font-size:9px}.header{padding:8px 10px}.brand strong{font-size:22px}.local-pill{display:none}}
 @media(max-width:360px){.iron-dashboard .stat strong{font-size:14px}.iron-dashboard .stat-label{font-size:8px}.iron-plan-list div{font-size:10px}.hero-iron h1{font-size:34px}}
+
+/* Atlas & Oak 2.0 — aged-brass Daily Fundamentals and body dashboard */
+.hero-iron h1{font-size:clamp(32px,5vw,51px);letter-spacing:.2px;max-width:430px}
+.brand strong{font-size:22px;white-space:nowrap}
+.fundamentals-mini{margin:13px 0 18px}
+.fund-mini-body{display:flex;flex-direction:column;align-items:stretch;gap:13px}
+.fund-mini-track{width:100%;height:9px;border:1px solid #614d31;background:#17130e;border-radius:20px;overflow:hidden;box-shadow:inset 0 2px 4px #0007}
+.fund-mini-track>div{height:100%;background:linear-gradient(90deg,#8f6629,#f6d686);border-radius:20px;min-width:0;transition:width .2s}
+.fund-mini-pills{display:flex;flex-wrap:wrap;gap:6px}
+.fund-mini-pill{padding:5px 7px;border:1px solid #574833;background:#251e16;color:#cbbb9f;border-radius:5px;font-size:10px}
+.fund-mini-pill.done{color:#f5d68a;border-color:#9d7b3f;background:#473419}
+.daily-tabs{display:flex;flex-wrap:wrap;gap:4px;margin:13px 0 18px;padding:5px}
+.daily-tabs button{flex:1 1 75px;white-space:nowrap;font-size:11px;padding:9px 7px}
+.fund-big-score{font:800 27px/1.1 Georgia,serif;color:#ecca80;text-align:right;white-space:nowrap}
+.fund-big-score small{display:block;font:600 11px system-ui;color:#bdad93;margin-top:5px}
+.fund-day-nav{display:flex;justify-content:space-between;gap:6px;margin-top:16px}
+.fund-day-nav button{flex:1;min-width:0;font-size:10px}
+.fund-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px;margin:12px 0}
+.fund-goal{border:1px solid #7b6540;background:linear-gradient(150deg,#342b20,#17130f 80%);border-radius:8px;padding:13px 11px;display:flex;gap:10px;align-items:start;box-shadow:inset 0 1px #c7a26855,0 3px 8px #0005;min-width:0}
+.fund-goal.completed{border-color:#ac864a}
+.fund-check{flex-shrink:0;width:30px;height:30px;border:2px solid #927344;background:#17130f;color:#231604;border-radius:7px;display:grid;place-items:center;font-size:20px;font-weight:900;cursor:pointer}
+.fund-check.checked{background:linear-gradient(#f5db9a,#c2913c);border-color:#f1c875}
+.fund-check:disabled{opacity:1;cursor:default}
+.fund-goal-body{flex:1;min-width:0}.fund-goal-top{display:flex;align-items:baseline;justify-content:space-between;flex-wrap:wrap;gap:4px}
+.fund-goal-top strong{font-size:13px;color:#f6e4c1}.fund-status{font-size:9px;font-weight:800;letter-spacing:.2px;color:#d1b87f}
+.fund-goal-body p{font-size:11px;line-height:1.45;color:#bca98a;margin:5px 0 9px;min-height:30px}
+.fund-inputline{display:flex;gap:4px;align-items:center;flex-wrap:wrap}
+.fund-inputline .fund-number{max-width:96px;min-width:55px;height:36px;padding:5px 7px;font-weight:700;font-size:14px}
+.fund-inputline button{min-height:31px;padding:5px 7px;font-size:10px}
+.fund-unit{color:#d6c4a0;font-size:11px}
+.fund-target{display:block;color:#c4b399;font-size:10px;margin-top:5px}
+.fund-week-chart{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:9px;margin:22px 0}
+.fund-week-day{background:none;border:0;color:#d4bd98;display:flex;gap:6px;align-items:center;flex-direction:column;cursor:pointer;min-width:0;font-size:11px}
+.fund-week-track{width:100%;height:124px;display:flex;justify-content:flex-end;flex-direction:column;background:linear-gradient(#372d21,#1b1711);border:1px solid #745b39;border-radius:4px;overflow:hidden}
+.fund-week-track>div{background:linear-gradient(90deg,#946b2e,#e5be67,#a57d38);min-height:0;transition:height .2s}
+.fund-week-day span{font-size:9px;color:#bbaa8b}
+.fund-metric-row{display:grid;grid-template-columns:minmax(80px,1fr) auto;align-items:center;gap:9px;padding:10px 0;border-bottom:1px solid #55432c;font-size:12px}
+.fund-metric-row .bartrack{grid-column:1/-1;margin-top:0}
+.planner-row{display:grid;grid-template-columns:minmax(75px,1fr) minmax(100px,1.2fr) minmax(100px,1.2fr);gap:8px;margin:10px 0;padding:9px;border-bottom:1px solid #5b482e;align-items:center}
+.planner-row strong{font-size:12px}
+.planner-row select{font-size:11px;padding:8px 5px;min-width:0;width:100%}
+.planner-row select:last-child{grid-column:2/-1}
+.planner-row select:disabled{opacity:.38}
+.fund-enabled{display:flex;gap:12px;align-items:center;margin:9px 0;padding:9px;border:1px solid #604b30;border-radius:5px;cursor:pointer;background:#1c1812}
+.fund-enabled input{accent-color:#ddb767;width:20px;height:20px}
+.fund-enabled span{display:flex;flex-direction:column;gap:2px}.fund-enabled strong{font-size:13px;color:#f2dbb3}.fund-enabled small{font-size:11px;color:#bbaa92}
+.fund-target-row{display:grid;grid-template-columns:minmax(125px,1fr) 95px 56px;align-items:center;gap:10px;margin:9px 0;font-size:12px}
+.fund-target-row input{max-width:110px}.fund-target-row span:last-child{font-size:11px;color:#c4ae8e}
+.photo-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:16px}
+.photo-tile{border:1px solid #8a6c3f;padding:6px;background:#251e16;min-width:0;display:flex;flex-direction:column;gap:5px}
+.photo-tile img{display:block;width:100%;height:130px;object-fit:cover;background:#14120f;border:1px solid #493a26}
+.photo-tile span{font-size:10px;color:#d1ba94}.photo-tile button{font-size:10px;align-self:flex-start}
+@media(max-width:680px){.fund-list{grid-template-columns:1fr}.planner-row{grid-template-columns:85px minmax(0,1fr)}.planner-row select:last-child{grid-column:2}.fund-inputline .fund-number{max-width:110px}}
+@media(max-width:480px){.hero-iron h1{font-size:clamp(32px,8.6vw,44px);max-width:70%;line-height:.96}.brand strong{font-size:20px}.brand span{font-size:7px}.fund-goal{padding:11px}.fund-week-chart{gap:5px}.fund-week-track{height:100px}.fund-target-row{grid-template-columns:minmax(105px,1fr) 83px 42px;gap:6px}.photo-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.daily-tabs button{font-size:10px;padding:9px 3px}}
+
+/* Keep the daily checklist above the fold on phones. */
+.hero.daily-hero{min-height:136px;max-height:none;padding:17px 19px;margin-bottom:12px}
+.hero.daily-hero h1{margin:8px 0;font-size:clamp(24px,5vw,34px)}
+.hero.daily-hero p{max-width:580px;margin:6px 0 1px}
+.daily-tabs{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:4px}
+.daily-tabs button{min-width:0;font-size:11px;padding:9px 2px}
+@media(max-width:480px){.hero.daily-hero{min-height:116px;padding:13px 14px}.hero.daily-hero h1{font-size:24px}.hero.daily-hero p{font-size:11px}.daily-tabs{margin:8px 0 13px}}
