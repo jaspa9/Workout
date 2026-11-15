@@ -82,3 +82,12 @@ FILES
 
 For private distribution, GitHub Pages is not an access-control system. A
 private repository does not by itself make a published Pages website private.
+
+
+ATLAS & OAK 2.1 — iPHONE SAFE-AREA AND HYDRATION UNITS
+---------------------------------------------------------
+- iPhone Home Screen app: the top header and Settings button are now padded beneath the status bar/Dynamic Island.
+- Daily > Today: select oz, mL, L, glasses, or bottles while entering hydration. Quick-add buttons follow the chosen unit.
+- Daily > Goals: change the water goal in your chosen unit. Customize one glass (default 8 fl oz) and one bottle (default 16.9 fl oz) to match your containers.
+- Existing water data remains stored in fluid ounces; selecting a unit does NOT reset or rewrite past entries. Workout records and routines still use repwise_workouts_v1.
+- Always export your JSON backup before updating your GitHub Pages files, and use the same GitHub URL. Clear the old website's cache only if the new version doesn't appear; do NOT clear website data.

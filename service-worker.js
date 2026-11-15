@@ -1,4 +1,4 @@
-const CACHE='atlas-oak-2026-11-14-v2';
+const CACHE='atlas-oak-2026-11-15-v2.1';
 const ASSETS=['./','./index.html','./styles.css','./app.js','./iron-gold-bg.webp','./iron-plate.webp','./iron-texture.webp','./icon.svg','./icon-192.png','./icon-512.png','./manifest.webmanifest'];
 self.addEventListener('install',event=>{event.waitUntil(caches.open(CACHE).then(c=>c.addAll(ASSETS)).then(()=>self.skipWaiting()))});
 self.addEventListener('activate',event=>{event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>(k.startsWith('repwise-')||k.startsWith('atlas-oak-'))&&k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim()))});

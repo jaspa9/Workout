@@ -316,3 +316,19 @@ body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;ba
 .daily-tabs{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:4px}
 .daily-tabs button{min-width:0;font-size:11px;padding:9px 2px}
 @media(max-width:480px){.hero.daily-hero{min-height:116px;padding:13px 14px}.hero.daily-hero h1{font-size:24px}.hero.daily-hero p{font-size:11px}.daily-tabs{margin:8px 0 13px}}
+
+/* v2.1: iPhone standalone safe-area fix (translucent status bar overlaps content otherwise). */
+.shell{padding-top:calc(env(safe-area-inset-top, 0px) + 12px)}
+.header{margin-top:0}
+@supports (padding: max(0px, 1px)) {
+ .shell{padding-top:max(12px,calc(env(safe-area-inset-top,0px) + 8px))}
+}
+@media(display-mode:standalone){
+ .shell{padding-top:max(65px,calc(env(safe-area-inset-top,0px) + 10px))}
+}
+/* Hydration unit selector and customizable container sizes. */
+.water-unit-picker{width:auto;max-width:175px;min-height:36px;padding:6px 8px;font-size:12px}
+.water-size-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin-top:16px}
+.water-size-grid .form-group{margin-bottom:3px}
+.fund-inputline .water-unit-picker{max-width:136px;width:136px}
+@media(max-width:400px){.fund-inputline .water-unit-picker{width:116px;font-size:11px}.water-size-grid{gap:8px}}
