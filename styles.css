@@ -332,3 +332,78 @@ body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:-1;ba
 .water-size-grid .form-group{margin-bottom:3px}
 .fund-inputline .water-unit-picker{max-width:136px;width:136px}
 @media(max-width:400px){.fund-inputline .water-unit-picker{width:116px;font-size:11px}.water-size-grid{gap:8px}}
+
+
+/* ATLAS & OAK — FOREST FORGE EDITION 2.2 */
+:root{--bg:#0b100d;--panel:#141713;--panel2:#1b221d;--line:#7d6840;--muted:#cdc1aa;--text:#f8edd5;--accent:#d4af5e;--cyan:#d4af5e;--accent-deep:#1f2d25;--oak:#243229;--oak2:#17221c;--oak3:#0f1713}
+html,body{background:linear-gradient(180deg,#0b100d,#090b09)}
+body::before{background:
+  radial-gradient(circle at 15% 5%,rgba(117,94,49,.25),transparent 24%),
+  radial-gradient(circle at 83% 18%,rgba(39,58,48,.35),transparent 26%),
+  linear-gradient(180deg,rgba(5,7,6,.90),rgba(10,9,8,.96)),
+  url('./iron-texture.webp') repeat;
+  background-size:auto,auto,auto,370px;
+  opacity:1}
+.shell{max-width:960px}
+.header{background:linear-gradient(175deg,rgba(37,49,41,.72),rgba(18,15,12,.95)),url('./iron-texture.webp') 0 0/340px;border-color:#927549;box-shadow:inset 0 1px rgba(246,218,158,.85),0 5px 0 #070605,0 10px 28px rgba(0,0,0,.28)}
+.brand-icon{background:linear-gradient(145deg,#e5c979,#b7892e);color:#2d2112;border-color:#b68e45}
+.brand strong{color:#f4e2b8;text-shadow:0 1px 0 #000,0 0 10px rgba(0,0,0,.12)}
+.brand span{color:#dbc8a2}
+.icon-button{background:linear-gradient(160deg,#1c241f,#111311);border-color:#6f5a38;color:#e7d6b0}
+.local-pill{color:#d0bd99}.status-dot{background:#d4af5e;box-shadow:0 0 0 4px rgba(212,175,94,.11)}
+.bottom-nav{background:linear-gradient(180deg,rgba(28,36,31,.96),rgba(11,12,10,.98));border-top-color:#796346;box-shadow:0 -8px 22px rgba(0,0,0,.35)}
+.nav-link{color:#b9aa90}.nav-link.active{color:#efd188}
+.hero.hero-iron{background:linear-gradient(100deg,#10140f 0%,#131712 48%,#0f0d0a 100%);box-shadow:0 12px 28px rgba(0,0,0,.25)}
+.hero-iron:before{background:
+  linear-gradient(90deg,rgba(10,11,10,.98) 0%,rgba(12,12,11,.95) 28%,rgba(14,13,11,.58) 60%,rgba(12,11,9,.20) 100%),
+  linear-gradient(0deg,rgba(34,52,43,.28),rgba(34,52,43,.28)),
+  url('./iron-plate.webp') right -2px top 0/auto 292px no-repeat}
+.hero-iron:after{background:
+  linear-gradient(0deg,#0d0b09 0%,transparent 22%),
+  repeating-linear-gradient(145deg,transparent 0 44px,rgba(206,168,88,.08) 44px 45px,transparent 45px 90px),
+  radial-gradient(circle at 28% 16%,rgba(63,92,71,.18),transparent 30%);
+  opacity:.45}
+.hero-iron .eyebrow{color:#e2bf72}
+.hero-iron h1{color:#f4e4bd;text-shadow:0 2px 0 #8f744b,1px 3px 0 #4f3c22,2px 5px 2px #000}
+.hero-iron p{color:#deccb0}
+.hero-iron .accent{color:#d4af5e}
+.hero-iron .iron-hero-cta,.btn-primary{background:linear-gradient(175deg,#ebcf83,#b98729 78%);border-color:#f7df9f;color:#241808;box-shadow:inset 0 1px #ffe8b0,0 8px 20px rgba(0,0,0,.25)}
+.hero-iron .iron-hero-cta:hover,.btn-primary:hover{filter:brightness(1.06)}
+.iron-dashboard .stat,.panel,.template-card,.workout-card,.iron-home-panel,.mix-mini,.coaching-card,.generator-status,.muscle-row,.pr-item,.rest-panel,.chart-box,.modal{
+  background:linear-gradient(160deg,rgba(27,31,27,.97),rgba(15,13,11,.97)),url('./iron-texture.webp') 0 0/360px;
+  border-color:#7d6840}
+.iron-dashboard .stat{box-shadow:inset 0 1px #baa16e,0 4px 0 #070706}
+.iron-dashboard .stat strong,.active-title,.panel h3,.section-head h2,.template-card strong,.pr-item strong{color:#f5e7c2}
+.iron-dashboard .stat-label,.stat-label,.subtle,.row-primary span,.panel p,.mix-mini span,.coaching-card p,.generator-status p,.pr-item small,.muscle-row span,.hint{color:#cabca4}
+.list-leading,.template-card .template-icon,.mix-number,.iron-section-medal{background:radial-gradient(circle,#6f5433 0%,#3a2a1d 56%,#1f180f 76%);border-color:#aa8746;color:#efc76a}
+.iron-home-panel{background:linear-gradient(150deg,#171b17,#0d0c0a 86%);box-shadow:inset 0 1px 0 #bea26f,0 5px 0 #070605,0 10px 22px rgba(0,0,0,.22)}
+.iron-section-bar,.workout-card-header{background:linear-gradient(170deg,rgba(54,70,59,.72),rgba(26,20,16,.88)),url('./iron-texture.webp') center/370px;border-bottom-color:#8e7246;box-shadow:inset 0 1px rgba(227,191,131,.85)}
+.iron-section-bar h2{color:#f5ddb0}
+.iron-section-bar p{color:#d7c2a0}
+.iron-plate-label,.iron-plate-button,.chip-accent,.tabs-mini button.active{background:linear-gradient(140deg,#e8d6aa,#9b7d54);border-color:#d6b16a;color:#4f3214}
+.iron-plan-list div span:last-child,.iron-head-value,.coaching-target,.mix-mini strong,.generator-status strong,.rest-number{color:#efd182}
+.input,.select,.textarea,.set-input,.tabs-mini,.day .dot,.check{background:linear-gradient(180deg,#0f1310,#11100e);border-color:#695538;color:#f8edd5}
+.day .dot.trained{background:linear-gradient(145deg,#ebcf83,#b98729);color:#251807}
+.day .dot.today{outline-color:#e2bf72}
+.input:focus,.select:focus,.textarea:focus,.set-input:focus{border-color:#e0bc67;box-shadow:0 0 0 3px rgba(224,188,103,.15)}
+.completed .set-input{border-color:#6f6637;background:linear-gradient(180deg,#1b211b,#171511)}
+.completed .set-label{color:#e8c772}
+.mix-banner{background:linear-gradient(95deg,rgba(16,20,17,.95),rgba(32,26,18,.80)),url('./iron-gold-bg.webp') center 68%/cover;border-color:#7e6845}
+.bartrack,.progress-bar{background:#30271d}.bartrack>div,.progress-bar>div{background:linear-gradient(90deg,#9e7733,#f0d17f)}
+.list-row{border-bottom-color:#5d4d34}.template-card:hover,.btn-outline:hover{border-color:#ad8a4a}
+.kbd{background:#2b2318;color:#f2ddb3}
+.toast{background:#362816;color:#f6e1b1;border-color:#b58b47}
+.iron-inline-link,.text-link{color:#e5c475}
+.panel,.template-card,.workout-card,.chart-box,.mix-mini,.coaching-card,.generator-status,.rest-panel,.empty,.modal{box-shadow:0 8px 20px rgba(0,0,0,.18)}
+.empty{background:linear-gradient(160deg,#121613,#0b0b09);border-color:#635137;color:#c8b9a1}
+@media(max-width:480px){
+  .header{height:82px;padding:10px 12px}
+  .brand strong{font-size:22px}
+  .hero.hero-iron{min-height:280px}
+  .hero-iron p{max-width:66%}
+}
+
+/* v2.3 manual training/recovery check-off: keep status legible on iPhone */
+.fund-goal-top{flex-wrap:wrap;gap:6px}
+.fund-status{white-space:normal;text-align:right;max-width:100%}
+.fund-check:not(:disabled){cursor:pointer;touch-action:manipulation}

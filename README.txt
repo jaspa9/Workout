@@ -1,3 +1,23 @@
+ATLAS & OAK 2.3 — FOREST FORGE / DAILY CHECKLIST FIX
+
+Fixes:
+- Scheduled rest day no longer auto-completes Training / Recovery.
+- Training / Recovery is always manually adjustable, even after a workout.
+- Manually unchecked days stay unchecked after app reload (override is saved).
+- Existing routines, workouts, saved Daily Fundamentals, hydration units and body data are preserved.
+- Same original localStorage key, and updated service-worker cache ID to reduce stale updates.
+
+INSTALL ON GITHUB PAGES:
+1. Export a JSON backup in your current app: Settings -> Download backup.
+2. In your existing Github Pages repository, replace ALL FILES with the same filenames
+   (particularly index.html, app.js, styles.css, and service-worker.js).
+3. Keep the same repository/site URL; never delete website data when updating.
+4. Once GitHub Pages redeploys, open Atlas & Oak and verify your workouts are present.
+5. Daily -> Today -> Training / Recovery should now be editable.
+
+Zip layout: these website files are at ZIP ROOT. Don't upload the zip itself.
+This app saves on the device/browser, not to GitHub. Keep offline JSON backups.
+
 ATLAS & OAK — IRON GOLD EDITION (v2.0)
 ======================================
 
